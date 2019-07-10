@@ -12,7 +12,7 @@ class LandscapeSVG extends React.Component {
     landscapeDiv.innerHTML = landscapeSVG;
     this.svg = $(landscapeDiv).find('svg')[0];
     this.svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-    this.svg.setAttribute('viewBox', '0 0 1500 800')
+    this.svg.setAttribute('viewBox', '0 0 1280 800')
   }
 
   render() {
