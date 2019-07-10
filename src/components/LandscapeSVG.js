@@ -1,6 +1,7 @@
 import React from 'react';
 import { landscapeSVG } from './LandscapeString'
 import $ from 'jquery';
+import { Grid, Typography, Paper, CardContent, Container}  from '@material-ui/core/';
 
 class LandscapeSVG extends React.Component {
 
@@ -21,14 +22,30 @@ class LandscapeSVG extends React.Component {
 			svg: {
 				dangerouslySetInnerHTML: {__html: $(this.svg).prop('outerHTML')},
         overflow: 'hidden',
-        width: '100%',
+        maxWidth: '100%',
         paddingBottom: '75%',
         position: 'relative'
 			},
+      SVGcontainer: {
+        style: {
+          maxWidth: '100%',
+          overflowX: 'hidden',
+          margin: 10
+        },
+      },
     };
 
     return (
-      <div {...inputs.svg}/>
+      <Container size='xs'>
+        <Grid container
+          justify='center'
+          spacing={0}
+          {...inputs.SVGContainer}>
+          <Grid item xs={12}sm={10}>
+            <div {...inputs.svg}/>
+          </Grid>
+        </Grid>
+      </Container>
     )
   }
 }

@@ -1,20 +1,25 @@
 import React from 'react';
 import './style.css';
 import LandscapeSVG from './components/LandscapeSVG'
-import { Grid, Typography, Card, CardContent, Container}  from '@material-ui/core/';
+import { Grid, Typography, Paper, CardContent, Container}  from '@material-ui/core/';
 
 function App() {
+
+  const inputs = {
+    landscapeContainer: {
+      style: {
+        maxWidth: '100%',
+        overflowX: 'hidden',
+        margin: 10
+      },
+    },
+  };
+
   return (
     <div>
-      <Container size='xs'>
-          <Card>
-            <CardContent>
-              <LandscapeSVG/>
-            </CardContent>
-          </Card>
-      </Container>
+        <LandscapeSVG/>
 
-        <Typography variant="h1" color='primary' align="center">
+        <Typography variant="h2" color='primary' align="center">
           YENNY SU
         </Typography>
     </div>

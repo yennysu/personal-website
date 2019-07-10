@@ -1,5 +1,5 @@
 export const landscapeSVG = `
-<svg id="Landscape" xmlns="http://www.w3.org/2000/svg" width="1280" height="800">
+<svg id="Landscape" xmlns="http://www.w3.org/2000/svg">
   <linearGradient id="sky_1_" gradientUnits="userSpaceOnUse" x1="638.5" y1="400" x2="638.5" y2="-3">
     <stop offset="0" stop-color="#fff5a9"/>
     <stop offset="1" stop-color="#15b3ff"/>
