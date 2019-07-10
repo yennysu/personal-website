@@ -21,6 +21,9 @@ class LandscapeSVG extends React.Component {
 			svg: {
 				dangerouslySetInnerHTML: {__html: $(this.svg).prop('outerHTML')},
         overflow: 'hidden',
+        width: '100%',
+        paddingBottom: '75%',
+        position: 'relative'
 			},
     };
 
