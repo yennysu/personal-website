@@ -1,29 +1,37 @@
 import React from 'react';
 import './style.css';
 import LandscapeSVG from './components/LandscapeSVG'
-import { Grid, Typography, Paper, CardContent, Container}  from '@material-ui/core/';
+import { Box, Grid, Typography, Paper, CardContent, Container}  from '@material-ui/core/';
 
-function App() {
+class App extends React.Component {
 
-  const inputs = {
-    landscapeContainer: {
-      style: {
-        maxWidth: '100%',
-        overflowX: 'hidden',
-        margin: 10
+  render() {
+    const inputs ={
+      mainDiv: {
+        style: {
+          margin: '5%'
+        }
       },
-    },
-  };
+      textDiv: {
+        style: {
+          margin: '3%'
+        }
+      }
+    }
 
-  return (
-    <div>
-        <LandscapeSVG/>
-
-        <Typography variant="h2" color='primary' align="center">
-          YENNY SU
-        </Typography>
-    </div>
-  );
+    return (
+      <div {...inputs.mainDiv}>
+          <LandscapeSVG/>
+          <div {...inputs.textDiv}>
+            <Typography variant="h2" color='primary' align="center">
+              <Box letterSpacing={6}>
+              yenny su
+              </Box>
+            </Typography>
+          </div>
+      </div>
+    );
+  }
 }
 
 export default App;
