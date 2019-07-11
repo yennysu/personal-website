@@ -33,12 +33,12 @@ class LandscapeSVG extends React.Component {
     };
 
     return (
-      <Container size='xs'>
+      <Container size='m'>
         <Grid container
           justify='center'
           spacing={0}
           {...inputs.SVGContainer}>
-          <Grid item xs={12}sm={10}>
+          <Grid item xs={12}>
             <div {...inputs.svg}/>
           </Grid>
         </Grid>

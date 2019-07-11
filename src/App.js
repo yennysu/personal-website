@@ -12,14 +12,14 @@ class App extends React.Component {
 
     const inputs = {
       style: {
-        marginBottom: '2%'
+        marginBottom: '0'
 
       }
     }
 
     return (
       <div {...inputs}>
-        <Typography variant="h3" color='primary' align="center">
+        <Typography variant="h2" color='primary' align="center">
           <Box letterSpacing={6}>
           yenny su
           </Box>
@@ -52,8 +52,10 @@ class App extends React.Component {
             </Typography>
           </Grid>
           <Grid item xs={6} sm={2} md={1}>
-            <Typography color='primary' align='center'>
+            <Typography align='center'>
+              <Link href={'https://drive.google.com/file/d/16qynA-_SO2t91j9xKJUYYz7buCh4HSZj/view?usp=sharing'}>
               cv
+              </Link>
             </Typography>
           </Grid>
         </Grid>
