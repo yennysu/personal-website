@@ -19,7 +19,7 @@ class App extends React.Component {
 
     return (
       <div {...inputs}>
-        <Typography variant="h2" color='primary' align="center">
+        <Typography variant="h3" color='primary' align="center">
           <Box letterSpacing={6}>
           yenny su
           </Box>
