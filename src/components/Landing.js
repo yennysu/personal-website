@@ -6,7 +6,7 @@ class Landing extends React.Component {
   landscape() {
     const inputs = {
       style: {
-        margin: '1%'
+        margin: '2%'
       }
     }
     return(

@@ -3,6 +3,7 @@ import './style.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {Link as RouterLink } from 'react-router-dom'
 import About from './components/About'
+import Portfolio from './components/Portfolio'
 import Landing from './components/Landing'
 import { Link, Box, Grid, Typography, Container}  from '@material-ui/core/';
 
@@ -19,7 +20,7 @@ class App extends React.Component {
 
     return (
       <div {...inputs}>
-        <Typography variant="h2" color='primary' align="center">
+        <Typography variant="h3" color='primary' align="center">
           <Box letterSpacing={6}>
           yenny su
           </Box>
@@ -48,7 +49,9 @@ class App extends React.Component {
           </Grid>
           <Grid item xs={6} sm={2} md={1}>
             <Typography color='primary' align='center'>
+            <Link component={RouterLink} to="/portfolio">
               portfolio
+            </Link>
             </Typography>
           </Grid>
           <Grid item xs={6} sm={2} md={1}>
@@ -63,6 +66,7 @@ class App extends React.Component {
         <Route exact path="/" component={Landing}/>
         <Route path="/Landing" component={Landing}/>
         <Route path="/About" component={About}/>
+        <Route path="/Portfolio" component={Portfolio}/>
       </Router>
     )
   }
