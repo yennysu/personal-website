@@ -1,7 +1,6 @@
 import React from 'react';
-import './style.css';
-import LandscapeSVG from './components/LandscapeSVG'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import { Box, Grid, Typography, Paper, CardContent, Container}  from '@material-ui/core/';
 
 class About extends React.Component {
 

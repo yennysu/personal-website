@@ -1,7 +1,8 @@
 import React from 'react';
 import './style.css';
-import LandscapeSVG from './components/LandscapeSVG'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import LandscapeSVG from './components/LandscapeSVG'
+import About from './components/About'
 import { Box, Grid, Typography, Paper, CardContent, Container}  from '@material-ui/core/';
 
 class App extends React.Component {
@@ -29,6 +30,15 @@ class App extends React.Component {
     )
   }
 
+  links() {
+    return (
+      <Router>
+        <Link to="/about">About</Link>
+        <Route path="/About" component={About}/>
+      </Router>
+    )
+  }
+
   render() {
     const inputs = {
       mainDiv: {
@@ -46,6 +56,7 @@ class App extends React.Component {
     return (
       <div {...inputs.mainDiv}>
         {this.headline()}
+        {this.links()}
         {this.landscape()}
       </div>
     );
