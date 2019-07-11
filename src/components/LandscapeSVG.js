@@ -1,7 +1,7 @@
 import React from 'react';
 import { landscapeSVG } from './LandscapeString'
 import $ from 'jquery';
-import { Grid, Typography, Paper, CardContent, Container}  from '@material-ui/core/';
+import { Grid, Container}  from '@material-ui/core/';
 
 class LandscapeSVG extends React.Component {
 

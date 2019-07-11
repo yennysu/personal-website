@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {Link as RouterLink } from 'react-router-dom'
 import About from './components/About'
 import Landing from './components/Landing'
-import { Link, Box, Grid, Typography, Paper, CardContent, Container}  from '@material-ui/core/';
+import { Link, Box, Grid, Typography, Container}  from '@material-ui/core/';
 
 class App extends React.Component {
 

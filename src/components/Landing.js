@@ -1,6 +1,5 @@
 import React from 'react';
 import LandscapeSVG from './LandscapeSVG'
-import { Box, Grid, Typography, Paper, CardContent, Container}  from '@material-ui/core/';
 
 class Landing extends React.Component {
 
