@@ -28,7 +28,6 @@ class LandscapeSVG extends React.Component {
         style: {
           maxWidth: '100%',
           overflowX: 'hidden',
-          margin: 10
         },
       },
     };
