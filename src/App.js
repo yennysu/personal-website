@@ -5,7 +5,7 @@ import {Link as RouterLink } from 'react-router-dom'
 import About from './components/About'
 //import Portfolio from './components/Portfolio'//
 import Landing from './components/Landing'
-import Blog from './components/Portfolio/Blog'
+import Portfolio from './components/Portfolio/Portfolio'
 import { Link, Box, Grid, Typography, Container}  from '@material-ui/core/';
 
 class App extends React.Component {
@@ -67,7 +67,7 @@ class App extends React.Component {
         <Route exact path="/" component={Landing}/>
         <Route path="/Landing" component={Landing}/>
         <Route path="/About" component={About}/>
-        <Route path="/Portfolio" component={Blog}/>
+        <Route path="/Portfolio" component={Portfolio}/>
       </Router>
     )
   }
