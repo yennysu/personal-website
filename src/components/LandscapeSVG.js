@@ -1,7 +1,7 @@
 import React from 'react';
 import { landscapeSVG } from './LandscapeString'
 import $ from 'jquery';
-import { TimelineMax, Sine, Power0, Power4 } from 'gsap/all';
+import { TimelineMax, Sine, Power0, Power4 } from 'gsap';
 import { Grid, Container}  from '@material-ui/core/';
 
 var tlClouds = new TimelineMax()
