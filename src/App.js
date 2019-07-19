@@ -57,7 +57,7 @@ class App extends React.Component {
           </Grid>
           <Grid item xs={6} sm={2} md={1}>
             <Typography align='center'>
-              <Link href={'https://drive.google.com/file/d/16qynA-_SO2t91j9xKJUYYz7buCh4HSZj/view?usp=sharing'}>
+              <Link href={'https://drive.google.com/file/d/1Gy9AoI1l-bl6OpUox4Gqmq1uM1Dkxya6/view?usp=sharing'}>
               cv
               </Link>
             </Typography>
