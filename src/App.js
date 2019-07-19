@@ -5,7 +5,7 @@ import {Link as RouterLink } from 'react-router-dom'
 import About from './components/About'
 //import Portfolio from './components/Portfolio'//
 import Landing from './components/Landing'
-import Portfolio from './components/Portfolio/Portfolio'
+import Portfolio from './components/portfolio/Portfolio'
 import { Link, Box, Grid, Typography, Container}  from '@material-ui/core/';
 
 class App extends React.Component {
