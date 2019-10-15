@@ -115,8 +115,8 @@ export default function Portfolio() {
                   </Typography>
                   <Typography variant="h6" color="inherit" paragraph>
                     Soccer is still in the dark ages when it comes to big data and analytics.
-                    For many clubs, when the summer transfer season comes around, deriving player prices is not an empirical exercise but one of intuition and feeling.
-                    Here I investigate whether we can predict transfer fees with linear regression techniques.
+                    For many clubs, when the summer transfer season comes around, setting player prices is not an empirical exercise but one of intuition and feeling.
+                    Let's investigate whether we can predict transfer fees using linear regression models and some feature selection using data from Transfermarkt and EA's FIFA video game.
                   </Typography>
                     <Button variant="contained" color="secondary">
                         <Link variant="inherit" href="#" color="inherit">

@@ -23,8 +23,18 @@ class About extends React.Component {
           about me
         </Typography>
         <div {...inputs.contentDiv}>
-          <Typography variant='body' align='left'>
-          Under Construction
+          <Typography variant='h6' align='left'>
+          Data scientist. Data viz lover.
+          <br/><br/>
+          Founded two startups.
+          <br/>
+          Pacific Crest Trail Thru-Hiker 2017.
+          <br/>
+          Formerly portfolio management at BlackRock.
+          <br/>
+          Columbia University, Class of 2013.
+          <br/><br/>
+          When I'm not coding or modeling, you can find me out in the woods or on a mountain.
           </Typography>
         </div>
       </Container>
