@@ -22,10 +22,10 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
     marginBottom: theme.spacing(4),
-    backgroundImage: 'url(https://source.unsplash.com/user/erondu)',
+    backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/personal-website-7bcb9.appspot.com/o/uefa-champions-league.jpg?alt=media&token=2030032b-6de1-491d-919f-eb57ad5c7b2d)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
+    backgroundPosition: 'top',
     marginTop: '3%'
   },
   overlay: {
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     bottom: 0,
     right: 0,
     left: 0,
-    backgroundColor: 'rgba(0,0,0,.3)',
+    backgroundColor: 'rgba(0,0,0,.6)',
   },
   mainFeaturedPostContent: {
     position: 'relative',
@@ -59,18 +59,18 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const featuredPosts = [
-  {
-    title: 'Random Post',
-    date: 'July 19',
-    description:
-      'Cool description here about my a data science project.',
-  },
-  {
-    title: 'Post title',
-    date: 'Nov 11',
-    description:
-      'Cool description here about my a data science project.',
-  },
+  // {
+  //   title: 'Random Post',
+  //   date: 'July 19',
+  //   description:
+  //     'Cool description here about my a data science project.',
+  // },
+  // {
+  //   title: 'Post title',
+  //   date: 'Nov 11',
+  //   description:
+  //     'Cool description here about my a data science project.',
+  // },
 ];
 
 export default function Portfolio() {
@@ -111,14 +111,18 @@ export default function Portfolio() {
               <Grid item md={6}>
                 <div className={classes.mainFeaturedPostContent}>
                   <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                    Under Construction
+                    Predicting Soccer Transfer Values
                   </Typography>
-                  <Typography variant="h5" color="inherit" paragraph>
-                    This is my latest project here. I'm predicting wildfire risk using meteorlogical data from the NOAA and surveying data from the Department of Agriculture.
+                  <Typography variant="h6" color="inherit" paragraph>
+                    Soccer is still in the dark ages when it comes to big data and analytics.
+                    For many clubs, when the summer transfer season comes around, deriving player prices is not an empirical exercise but one of intuition and feeling.
+                    Here I investigate whether we can predict transfer fees with linear regression techniques.
                   </Typography>
-                  <Link variant="subtitle1" href="#">
-                    Continue reading…
-                  </Link>
+                    <Button variant="contained" color="secondary">
+                        <Link variant="inherit" href="#" color="inherit">
+                            Continue reading…
+                        </Link>
+                    </Button>
                 </div>
               </Grid>
             </Grid>
